@@ -10,6 +10,40 @@
 
 
 
+var __createBinding = this && this.__createBinding || (Object.create ? function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  Object.defineProperty(o, k2, {
+    enumerable: true,
+    get: function get() {
+      return m[k];
+    }
+  });
+} : function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  o[k2] = m[k];
+});
+
+var __setModuleDefault = this && this.__setModuleDefault || (Object.create ? function (o, v) {
+  Object.defineProperty(o, "default", {
+    enumerable: true,
+    value: v
+  });
+} : function (o, v) {
+  o["default"] = v;
+});
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+  }
+
+  __setModuleDefault(result, mod);
+
+  return result;
+};
+
 var __importDefault = this && this.__importDefault || function (mod) {
   return mod && mod.__esModule ? mod : {
     "default": mod
@@ -20,16 +54,118 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var login_1 = __webpack_require__(/*! ./login */ "./resources/ts/login.tsx");
+
+var top_1 = __webpack_require__(/*! ./top */ "./resources/ts/top.tsx");
 
 var react_dom_1 = __importDefault(__webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js"));
 
 var App = function App() {
-  var title = 'TypeScript React !!';
-  return react_1["default"].createElement("h1", null, title);
+  var _a = react_1.useState(false),
+      logIn = _a[0],
+      setLogIn = _a[1];
+
+  return logIn ? react_1["default"].createElement(top_1.Top, null) : react_1["default"].createElement(login_1.LogIn, {
+    setLogIn: setLogIn
+  });
 };
 
-react_dom_1["default"].render(react_1["default"].createElement(App, null), document.getElementById('app'));
+react_dom_1["default"].render(react_1["default"].createElement(App, null), document.getElementById('SAM'));
+
+/***/ }),
+
+/***/ "./resources/ts/login.tsx":
+/*!********************************!*\
+  !*** ./resources/ts/login.tsx ***!
+  \********************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.LogIn = void 0;
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var LogIn = function LogIn(setLogIn) {
+  return react_1["default"].createElement("div", {
+    className: "form-signin text-center"
+  }, react_1["default"].createElement("form", null, react_1["default"].createElement("h1", {
+    className: "h3 mb-3 fw-normal"
+  }, "Please sign in"), react_1["default"].createElement("div", {
+    className: "form-floating"
+  }, react_1["default"].createElement("input", {
+    type: "email",
+    className: "form-control",
+    id: "floatingInput",
+    placeholder: "name@example.com"
+  }), react_1["default"].createElement("label", {
+    htmlFor: "floatingInput"
+  }, "Email address")), react_1["default"].createElement("div", {
+    className: "form-floating"
+  }, react_1["default"].createElement("input", {
+    type: "password",
+    className: "form-control",
+    id: "floatingPassword",
+    placeholder: "Password"
+  }), react_1["default"].createElement("label", {
+    htmlFor: "floatingPassword"
+  }, "Password")), react_1["default"].createElement("div", {
+    className: "checkbox mb-3"
+  }, react_1["default"].createElement("label", {
+    htmlFor: "aaa"
+  }, "Remember me"), react_1["default"].createElement("input", {
+    id: "aaa",
+    type: "checkbox",
+    value: "remember-me"
+  })), react_1["default"].createElement("button", {
+    className: "w-100 btn btn-lg btn-primary",
+    type: "submit"
+  }, "Sign in"), react_1["default"].createElement("p", {
+    className: "mt-5 mb-3 text-muted"
+  }, "\xA9 2017\u20132021")));
+};
+
+exports.LogIn = LogIn;
+
+/***/ }),
+
+/***/ "./resources/ts/top.tsx":
+/*!******************************!*\
+  !*** ./resources/ts/top.tsx ***!
+  \******************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.Top = void 0;
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var Top = function Top() {
+  return react_1["default"].createElement("p", null, "top");
+};
+
+exports.Top = Top;
 
 /***/ }),
 
