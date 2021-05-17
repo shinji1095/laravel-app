@@ -2,6 +2,122 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./resources/ts/NavItem/attend.tsx":
+/*!*****************************************!*\
+  !*** ./resources/ts/NavItem/attend.tsx ***!
+  \*****************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.Attend = void 0;
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var Attend = function Attend() {
+  return react_1["default"].createElement("p", null, "attend");
+};
+
+exports.Attend = Attend;
+
+/***/ }),
+
+/***/ "./resources/ts/NavItem/confirm.tsx":
+/*!******************************************!*\
+  !*** ./resources/ts/NavItem/confirm.tsx ***!
+  \******************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.Confirm = void 0;
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var Confirm = function Confirm() {
+  return react_1["default"].createElement("p", null, "confirm");
+};
+
+exports.Confirm = Confirm;
+
+/***/ }),
+
+/***/ "./resources/ts/NavItem/leave.tsx":
+/*!****************************************!*\
+  !*** ./resources/ts/NavItem/leave.tsx ***!
+  \****************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.Leave = void 0;
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var Leave = function Leave() {
+  return react_1["default"].createElement("p", null, "leave");
+};
+
+exports.Leave = Leave;
+
+/***/ }),
+
+/***/ "./resources/ts/NavItem/top.tsx":
+/*!**************************************!*\
+  !*** ./resources/ts/NavItem/top.tsx ***!
+  \**************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.Top = void 0;
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var Top = function Top() {
+  return react_1["default"].createElement("p", null, "top");
+};
+
+exports.Top = Top;
+
+/***/ }),
+
 /***/ "./resources/ts/app.tsx":
 /*!******************************!*\
   !*** ./resources/ts/app.tsx ***!
@@ -58,16 +174,16 @@ var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/reac
 
 var login_1 = __webpack_require__(/*! ./login */ "./resources/ts/login.tsx");
 
-var top_1 = __webpack_require__(/*! ./top */ "./resources/ts/top.tsx");
+var main_1 = __webpack_require__(/*! ./main */ "./resources/ts/main.tsx");
 
 var react_dom_1 = __importDefault(__webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js"));
 
 var App = function App() {
-  var _a = react_1.useState(false),
+  var _a = react_1.useState(true),
       logIn = _a[0],
       setLogIn = _a[1];
 
-  return logIn ? react_1["default"].createElement(top_1.Top, null) : react_1["default"].createElement(login_1.LogIn, {
+  return logIn ? react_1["default"].createElement(main_1.Main, null) : react_1["default"].createElement(login_1.LogIn, {
     setLogIn: setLogIn
   });
 };
@@ -140,10 +256,107 @@ exports.LogIn = LogIn;
 
 /***/ }),
 
-/***/ "./resources/ts/top.tsx":
-/*!******************************!*\
-  !*** ./resources/ts/top.tsx ***!
-  \******************************/
+/***/ "./resources/ts/main.tsx":
+/*!*******************************!*\
+  !*** ./resources/ts/main.tsx ***!
+  \*******************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+
+var __createBinding = this && this.__createBinding || (Object.create ? function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  Object.defineProperty(o, k2, {
+    enumerable: true,
+    get: function get() {
+      return m[k];
+    }
+  });
+} : function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  o[k2] = m[k];
+});
+
+var __setModuleDefault = this && this.__setModuleDefault || (Object.create ? function (o, v) {
+  Object.defineProperty(o, "default", {
+    enumerable: true,
+    value: v
+  });
+} : function (o, v) {
+  o["default"] = v;
+});
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+  }
+
+  __setModuleDefault(result, mod);
+
+  return result;
+};
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.Main = void 0;
+
+var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var navbar_1 = __webpack_require__(/*! ./navbar */ "./resources/ts/navbar.tsx");
+
+var top_1 = __webpack_require__(/*! ./NavItem/top */ "./resources/ts/NavItem/top.tsx");
+
+var attend_1 = __webpack_require__(/*! ./NavItem/attend */ "./resources/ts/NavItem/attend.tsx");
+
+var leave_1 = __webpack_require__(/*! ./NavItem/leave */ "./resources/ts/NavItem/leave.tsx");
+
+var confirm_1 = __webpack_require__(/*! ./NavItem/confirm */ "./resources/ts/NavItem/confirm.tsx");
+
+var Main = function Main() {
+  var _a;
+
+  var navList = [{
+    nav: "top",
+    ele: react_1["default"].createElement(top_1.Top, null)
+  }, {
+    nav: "attend",
+    ele: react_1["default"].createElement(attend_1.Attend, null)
+  }, {
+    nav: "leave",
+    ele: react_1["default"].createElement(leave_1.Leave, null)
+  }, {
+    nav: "confirm",
+    ele: react_1["default"].createElement(confirm_1.Confirm, null)
+  }];
+
+  var _b = react_1.useState("top"),
+      navState = _b[0],
+      setNavState = _b[1];
+
+  var handleNav = function handleNav(nav) {
+    return setNavState(nav);
+  };
+
+  return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(navbar_1.Navbar, {
+    handleNav: handleNav
+  }), react_1["default"].createElement("div", {
+    className: "wrapper"
+  }, (_a = navList.find(function (navItem) {
+    return navItem.nav === navState;
+  })) === null || _a === void 0 ? void 0 : _a.ele));
+};
+
+exports.Main = Main;
+
+/***/ }),
+
+/***/ "./resources/ts/navbar.tsx":
+/*!*********************************!*\
+  !*** ./resources/ts/navbar.tsx ***!
+  \*********************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -157,15 +370,76 @@ var __importDefault = this && this.__importDefault || function (mod) {
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.Top = void 0;
+exports.Navbar = void 0;
 
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
-var Top = function Top() {
-  return react_1["default"].createElement("p", null, "top");
+var Navbar = function Navbar(_a) {
+  var handleNav = _a.handleNav;
+  return react_1["default"].createElement("nav", {
+    className: "navbar navbar-expand-md navbar-dark fixed-top bg-dark"
+  }, react_1["default"].createElement("div", {
+    className: "container-fluid"
+  }, react_1["default"].createElement("a", {
+    className: "navbar-brand",
+    href: "#"
+  }, "Fixed navbar"), react_1["default"].createElement("button", {
+    className: "navbar-toggler",
+    type: "button",
+    "data-bs-toggle": "collapse",
+    "data-bs-target": "#navbarCollapse",
+    "aria-controls": "navbarCollapse",
+    "aria-expanded": "false",
+    "aria-label": "Toggle navigation"
+  }, react_1["default"].createElement("span", {
+    className: "navbar-toggler-icon"
+  })), react_1["default"].createElement("div", {
+    className: "collapse navbar-collapse",
+    id: "navbarCollapse"
+  }, react_1["default"].createElement("ul", {
+    className: "navbar-nav me-auto mb-2 mb-md-0"
+  }, react_1["default"].createElement("li", {
+    className: "nav-item"
+  }, react_1["default"].createElement("a", {
+    className: "nav-link active",
+    "aria-current": "page",
+    href: "#"
+  }, "\u30C8\u30C3\u30D7")), react_1["default"].createElement("li", {
+    className: "nav-item"
+  }, react_1["default"].createElement("a", {
+    className: "nav-link",
+    href: "#"
+  }, "Link")), react_1["default"].createElement("li", {
+    className: "nav-item dropdown"
+  }, react_1["default"].createElement("a", {
+    className: "nav-link dropdown-toggle",
+    href: "#",
+    id: "navbarDropdown",
+    role: "button",
+    "data-bs-toggle": "dropdown",
+    "aria-expanded": "false"
+  }, "\u51FA\u5E2D\u7BA1\u7406"), react_1["default"].createElement("ul", {
+    className: "dropdown-menu",
+    "aria-labelledby": "navbarDropdown"
+  }, react_1["default"].createElement("li", null, react_1["default"].createElement("a", {
+    className: "dropdown-item",
+    onClick: function onClick() {
+      return handleNav("attend");
+    }
+  }, "\u51FA\u5E2D")), react_1["default"].createElement("li", null, react_1["default"].createElement("a", {
+    className: "dropdown-item",
+    onClick: function onClick() {
+      return handleNav("leave");
+    }
+  }, "\u9000\u5E2D")), react_1["default"].createElement("li", null, react_1["default"].createElement("a", {
+    className: "dropdown-item",
+    onClick: function onClick() {
+      return handleNav("confirm");
+    }
+  }, "\u51FA\u6B20\u78BA\u8A8D"))))))));
 };
 
-exports.Top = Top;
+exports.Navbar = Navbar;
 
 /***/ }),
 
