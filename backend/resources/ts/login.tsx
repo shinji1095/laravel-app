@@ -25,5 +25,4 @@ export const LogIn: FC<{setLogIn: Dispatch<SetStateAction<boolean>>}> = (setLogI
             </form>
         </div>
   );
-
 }

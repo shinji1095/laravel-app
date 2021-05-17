@@ -1,13 +1,13 @@
-import React, {useState, useCallback} from 'react'
+import React, {useState} from 'react'
 import {LogIn} from "./login";
-import {Top} from "./top";
+import {Main} from "./main";
 import ReactDOM from 'react-dom';
  
 const App : React.FC = () => {
-    const [logIn, setLogIn] = useState<boolean>(false);
+    const [logIn, setLogIn] = useState<boolean>(true);
 
     return (
-        logIn? <Top />:<LogIn setLogIn={setLogIn} />
+        logIn? <Main />:<LogIn setLogIn={setLogIn} />
     )
 }
  
