@@ -1,17 +1,23 @@
-import React, {useState} from 'react'
-import {LogIn} from "./login";
-import {Main} from "./main";
+import React, { useContext, useEffect } from 'react'
+import { LogIn } from "./login";
+import { Main } from "./main";
 import ReactDOM from 'react-dom';
+
+import FirebaseProvider from "./providers/firebase";
+import FirebaseContext  from "./contexts/firebase";
  
 const App : React.FC = () => {
-    const [logIn, setLogIn] = useState<boolean>(true);
+    const { user }  = useContext(FirebaseContext);
 
     return (
-        logIn? <Main />:<LogIn setLogIn={setLogIn} />
+        user !== null ? <Main />:<LogIn/>
     )
 }
  
 ReactDOM.render(
-    <App />,
+    <FirebaseProvider>
+        <App />
+    </FirebaseProvider>,
+
     document.getElementById('SAM')
 )

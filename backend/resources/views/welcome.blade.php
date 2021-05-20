@@ -18,5 +18,12 @@
     <body>
         <div id="SAM"></div>
         <script src="{{ mix('js/app.js') }}"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        
     </body>
 </html>
