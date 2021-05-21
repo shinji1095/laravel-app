@@ -1,0 +1,19 @@
+html, body {
+    height: 100%;
+}
+
+.from-signin{
+    form{
+        & label,h1 {
+            text-align : left;
+        }    
+        
+        & .roomSelect{
+            margin-bottom: 10px;
+        }
+        
+        &.timeSelect{
+            margin-bottom: 10px;
+        }
+    }
+}
