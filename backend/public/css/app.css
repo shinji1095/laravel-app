@@ -32,6 +32,20 @@ body {
   border-top-right-radius: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
+.from-signin form label, .from-signin form h1 {
+  text-align: left;
+}
+.from-signin form .roomSelect {
+  margin-bottom: 10px;
+}
+.from-signin form.timeSelect {
+  margin-bottom: 10px;
+}
+
 .wrapper {
   margin-top: 60px;
 }
