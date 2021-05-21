@@ -98,6 +98,8 @@ cache-clear:
 	docker-compose exec app composer clear-cache
 	@make optimize-clear
 	docker-compose exec app php artisan event:clear
+composer-require:
+	docker-compose exec app php composer require ${NAME}
 npm:
 	@make npm-install
 npm-install:
