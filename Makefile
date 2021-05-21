@@ -68,6 +68,10 @@ app:
 	docker-compose exec app bash
 migrate:
 	docker-compose exec app php artisan migrate
+make-controller:
+	docker-compose exec app php artisan make:controller ${NAME}
+make-model:
+	docker-compose exec app php artisan make:model ${NAME} -m
 fresh:
 	docker-compose exec app php artisan migrate:fresh --seed
 seed:
