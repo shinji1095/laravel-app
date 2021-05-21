@@ -32,6 +32,16 @@ body {
   border-top-right-radius: 0;
 }
 
+.form-signin .roomSelect {
+  margin-bottom: 30px;
+}
+.form-signin .timeSelect {
+  margin-bottom: 30px;
+}
+.form-signin .timeSelect label[for=nowLabel] {
+  margin-top: 10px;
+}
+
 .wrapper {
   margin-top: 60px;
 }

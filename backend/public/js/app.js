@@ -24,7 +24,39 @@ exports.Attend = void 0;
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
 var Attend = function Attend() {
-  return react_1["default"].createElement("p", null, "attend");
+  var timeList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
+  return react_1["default"].createElement("div", {
+    className: "form-signin text-center"
+  }, react_1["default"].createElement("h1", {
+    className: "h3 mb-3 fw-normal"
+  }, "\u3053\u3093\u306B\u3061\u306F"), react_1["default"].createElement("section", {
+    className: "roomSelect"
+  }, react_1["default"].createElement("label", {
+    htmlFor: "roomLabel"
+  }, "\u4F7F\u7528\u3059\u308B\u90E8\u5C4B\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044"), react_1["default"].createElement("select", {
+    className: "form-select",
+    "aria-label": "Default select example"
+  }, react_1["default"].createElement("option", {
+    value: "5540"
+  }, "5540"), react_1["default"].createElement("option", {
+    value: "5531"
+  }, "5531"))), react_1["default"].createElement("section", {
+    className: "timeSelect"
+  }, react_1["default"].createElement("label", {
+    htmlFor: "timeLabel"
+  }, "\u5165\u5BA4\u6642\u9593\u3092\u9078\u629E\u3057\u3066\u304F\u3060\u3055\u3044"), react_1["default"].createElement("select", {
+    className: "form-select",
+    "aria-label": "Default select example"
+  }, timeList.map(function (num) {
+    return react_1["default"].createElement("option", {
+      value: num
+    }, num);
+  })), react_1["default"].createElement("label", {
+    htmlFor: "nowLabel"
+  }, "now\u306A\u3089\u73FE\u5728\u306E\u6642\u9593")), react_1["default"].createElement("button", {
+    type: "button",
+    className: "btn btn-primary btn-lg"
+  }, "Submit"));
 };
 
 exports.Attend = Attend;

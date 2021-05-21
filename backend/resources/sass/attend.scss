@@ -1,0 +1,14 @@
+.form-signin{
+
+    & .roomSelect{
+        margin-bottom : 30px;
+    }
+
+    & .timeSelect{
+        margin-bottom : 30px;
+
+        & label[for=nowLabel]{
+            margin-top : 10px;
+        }
+    }
+}
