@@ -13,10 +13,16 @@ class CreateAttendancesTable extends Migration
      */
     public function up()
     {
-        Schema::create('attendances', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
+        if(!Schema::hasTable('attendances')){
+            Schema::create('attendances', function (Blueprint $table) {
+                $table->id();
+                $table->integer('room');
+                $table->time('timeAttend');
+                $table->time('timeLeave');
+                $table->string('riskLunch');
+                $table->string('riskDinner');
+            });
+        }
     }
 
     /**
