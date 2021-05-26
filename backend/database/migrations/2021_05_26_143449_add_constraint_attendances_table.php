@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAttendancesTable extends Migration
+class AddConstraintAttendancesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,13 +15,12 @@ class CreateAttendancesTable extends Migration
     {
         if(!Schema::hasTable('attendances')){
             Schema::create('attendances', function (Blueprint $table) {
-                $table->id();
-                $table->integer('roomID');
-                $table->time('arrival');
-                $table->time('leave');
-                $table->string('riskForLunch');
-                $table->string('riskForDinner');
+                //外部キー制約
                 $table->integer("userID");
+                $table->foreign("userID")
+                ->reference("id")
+                ->on("users")
+                ->onDelete("cascade");
             });
         }
     }
@@ -33,6 +32,8 @@ class CreateAttendancesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('attendances');
+        // Schema::table('attendances', function (Blueprint $table) {
+        //     $table->dropForeign('articles_user_id_foreign');
+        // });
     }
 }

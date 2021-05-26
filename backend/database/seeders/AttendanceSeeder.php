@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class AttendanceSeeder extends Seeder
 {
@@ -13,15 +14,15 @@ class AttendanceSeeder extends Seeder
      */
     public function run()
     {
-        $arrival = new DateTime("2021-05-20 10:00:00");
-        $leave   = new DateTime("2021-05-20 16:00:00")
-        DB::table("users")->insert({
-        "roomID" => 5531,
-        "arrival" => $arrival,
-        "leave"  =>  $leave,
-        "riskForLunch" => "",
-        "riskForDinner"=> "",
-        "userID" => 1
-        })
+        $arrival = now();
+        $leave   = now();
+        DB::table("attendances")->insert([
+        "roomID"       => 5531,
+        "arrival"      => $arrival ,
+        "leave"        => $leave   ,
+        "riskForLunch" => ""       ,
+        "riskForDinner"=> ""       ,
+        "userID"       => 1
+        ]);
     }
 }
