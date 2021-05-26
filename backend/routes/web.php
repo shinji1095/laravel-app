@@ -15,4 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+
+Route::get("temp", "AttendanceController@temp")
+
+# Ajax通信
+Route::prefix("ajax")->group(function(){
+    Route::post("attend", "AttendanceController@attend")
+    Route::post("leave", "AttendanceController@leave")
+
+})
 });

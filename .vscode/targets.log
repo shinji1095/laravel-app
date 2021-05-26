@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 
 # This program built for i386-pc-mingw32
 
-# Make �f�[�^�x�[�X�o�� Thu May 20 11:43:46 2021
+# Make �f�[�^�x�[�X�o�� Wed May 26 20:33:26 2021
 
 # �ϐ�
 
@@ -44,8 +44,6 @@ PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # makefile �ϐ� (`makefile', 1 �s�ڂ���)
 MAKEFILE_LIST :=  makefile
 # ���ϐ�
-FPS_BROWSER_USER_PROFILE_STRING = Default
-# ���ϐ�
 VSCODE_NODE_CACHED_DATA_DIR = C:\Users\shinj\AppData\Roaming\Code\CachedData\054a9295330880ed74ceaedda236253b4f39a335
 # ���ϐ�
 TMP = C:\Users\shinj\AppData\Local\Temp
@@ -58,7 +56,7 @@ CONDA_ENVS_PATH = D:\conda\envs
 # ���ϐ�
 PROGRAMDATA = C:\ProgramData
 # ���ϐ�
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-4e683e25-ffef-45d9-b2ae-0d8141b53c54-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-a382df23-8a2c-4aeb-9ad1-6253f59d6268-sock
 # ���ϐ�
 VSCODE_CWD = C:\Users\shinj\AppData\Local\Programs\Microsoft VS Code
 # ���ϐ�
@@ -83,10 +81,12 @@ NUMBER_OF_PROCESSORS = 12
 ELECTRON_RUN_AS_NODE = 1
 # �f�t�H���g
 .FEATURES := target-specific order-only second-expansion else-if archives
+# ���ϐ�
+NVTOOLSEXT_PATH = C:\Program Files\NVIDIA Corporation\NvToolsExt\
 # �����ϐ�
 %F = $(notdir $%)
 # ���ϐ�
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_40696_GGODKQMRRMAZEEFH
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6300_SVITARPAGIXJUDGM
 # ���ϐ�
 VSCODE_PIPE_LOGGING = true
 # ���ϐ�
@@ -190,13 +190,11 @@ LANG = C
 # ���ϐ�
 PROCESSOR_LEVEL = 6
 # ���ϐ�
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
-# ���ϐ�
-VSCODE_PID = 40696
+VSCODE_PID = 6300
 # ���ϐ�
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-C2GKRUA
 # �ϐ��Z�b�g�̃n�b�V���e�[�u���̏��:
-# Load=92/1024=9%, Rehash=0, Collisions=9/112=8%
+# Load=91/1024=9%, Rehash=0, Collisions=9/111=8%
 
 # Pattern-specific Variable Values
 
@@ -210,9 +208,9 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-C2GKRUA
 # C:\Program Files\Docker\Docker\resources\bin (key C:/Program Files/Docker/Docker/resources/bin, mtime 1621154747): 13 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
 # D:\Program Files\bin (key D:/Program Files/bin, mtime 1618919949): 4 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
 # C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1618652686): 32 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
-# C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1618652943): 156 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
-# . (key d:/Projects/Laravel/wadaken-studentAttendanceManager, mtime 1621297945): 14 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
-# C:\Users\shinj\AppData\Local\Microsoft\WindowsApps (key C:/Users/shinj/AppData/Local/Microsoft/WindowsApps, mtime 1620923217): 13 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1621782992): 156 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# . (key d:/Projects/Laravel/wadaken-studentAttendanceManager, mtime 1621587304): 14 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Users\shinj\AppData\Local\Microsoft\WindowsApps (key C:/Users/shinj/AppData/Local/Microsoft/WindowsApps, mtime 1621783148): 13 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
 # C:\wget\bin\wget (key C:/wget/bin/wget, mtime 1561815698): 7 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
 # C:\Program Files\nodejs\ (key C:/Program Files/nodejs/, mtime 1600521405): 11 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
 # C:\Program Files\ffmpeg-4.1.3-win64-static\bin (key C:/Program Files/ffmpeg-4.1.3-win64-static/bin, mtime 1561218473): 5 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
@@ -229,7 +227,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-C2GKRUA
 # C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1607068717): 8 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
 # C:\ProgramData\DockerDesktop\version-bin (key C:/ProgramData/DockerDesktop/version-bin, mtime 1621154802): 2 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1561802016): 8 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
-# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1621472385): 2970 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1621944549): 2970 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
 # C:\Users\shinj\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/shinj/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1620964635): 4 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
 # C:\Users\shinj\AppData\Roaming\npm (key C:/Users/shinj/AppData/Roaming/npm, mtime 1620815945): 48 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
 
@@ -240,6 +238,14 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-C2GKRUA
 # �Öك��[���Ȃ�.
 
 # �t�@�C��
+
+composer-require:
+#  �Öك��[���̒T���͍s���܂���ł���.
+#  �C���������`�F�b�N����邱�Ƃ͂���܂���.
+#  �t�@�C���͍X�V����Ă��܂���.
+#  ���s����R�}���h (`makefile', 102 �s�ڂ���):
+	docker-compose exec app php composer require ${NAME}
+	
 
 install-recommend-packages:
 #  �Öك��[���̒T���͍s���܂���ł���.
@@ -268,7 +274,7 @@ cache:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 89 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 93 �s�ڂ���):
 	docker-compose exec app composer dump-autoload -o
 	@make optimize
 	docker-compose exec app php artisan event:cache
@@ -295,7 +301,7 @@ redis:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 126 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 132 �s�ڂ���):
 	docker-compose exec redis redis-cli
 	
 
@@ -311,7 +317,7 @@ yarn-install:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 112 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 118 �s�ڂ���):
 	@make yarn
 	
 
@@ -342,7 +348,7 @@ npm-hot:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 108 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 114 �s�ڂ���):
 	docker-compose exec web npm run hot
 	
 
@@ -358,7 +364,7 @@ npm:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 98 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 104 �s�ڂ���):
 	@make npm-install
 	
 
@@ -383,7 +389,7 @@ npm-watch:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 104 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 110 �s�ڂ���):
 	docker-compose exec web npm run watch
 	
 
@@ -391,7 +397,7 @@ optimize:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 85 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 89 �s�ڂ���):
 	docker-compose exec app php artisan optimize
 	
 
@@ -407,7 +413,7 @@ npm-watch-poll:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 106 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 112 �s�ڂ���):
 	docker-compose exec web npm run watch-poll
 	
 
@@ -431,7 +437,7 @@ test:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 83 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 87 �s�ڂ���):
 	docker-compose exec app php artisan test
 	
 
@@ -439,14 +445,14 @@ sql:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 124 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 130 �s�ڂ���):
 	docker-compose exec db bash -c 'mysql -u $$MYSQL_USER -p$$MYSQL_PASSWORD $$MYSQL_DATABASE'
 	
 
 # �^�[�Q�b�g�ł͂���܂���:
 makefile:
 #  �Öك��[���̒T�����s���܂���.
-#  �ŏI�C�� 2021-05-11 11:29:14
+#  �ŏI�C�� 2021-05-21 17:55:04
 #  �t�@�C���͍X�V����Ă��܂�.
 #  �X�V�ɐ������܂���.
 # �ϐ��Z�b�g�̃n�b�V���e�[�u���̏��:
@@ -464,7 +470,7 @@ dacapo:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 76 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 80 �s�ڂ���):
 	docker-compose exec app php artisan dacapo
 	
 
@@ -472,7 +478,7 @@ npm-dev:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 102 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 108 �s�ڂ���):
 	docker-compose exec web npm run dev
 	
 
@@ -480,7 +486,7 @@ cache-clear:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 94 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 98 �s�ڂ���):
 	docker-compose exec app composer clear-cache
 	@make optimize-clear
 	docker-compose exec app php artisan event:clear
@@ -490,7 +496,7 @@ ide-helper:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 128 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 134 �s�ڂ���):
 	docker-compose exec app php artisan clear-compiled
 	docker-compose exec app php artisan ide-helper:generate
 	docker-compose exec app php artisan ide-helper:meta
@@ -501,7 +507,7 @@ rollback-test:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 78 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 82 �s�ڂ���):
 	docker-compose exec app php artisan migrate:fresh
 	docker-compose exec app php artisan migrate:refresh
 	
@@ -510,7 +516,7 @@ seed:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 74 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 78 �s�ڂ���):
 	docker-compose exec app php artisan db:seed
 	
 
@@ -518,7 +524,7 @@ db:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 122 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 128 �s�ڂ���):
 	docker-compose exec db bash
 	
 
@@ -528,6 +534,14 @@ migrate:
 #  �t�@�C���͍X�V����Ă��܂���.
 #  ���s����R�}���h (`makefile', 70 �s�ڂ���):
 	docker-compose exec app php artisan migrate
+	
+
+make-model:
+#  �Öك��[���̒T���͍s���܂���ł���.
+#  �C���������`�F�b�N����邱�Ƃ͂���܂���.
+#  �t�@�C���͍X�V����Ă��܂���.
+#  ���s����R�}���h (`makefile', 74 �s�ڂ���):
+	docker-compose exec app php artisan make:model ${NAME} -m
 	
 
 create-project:
@@ -555,7 +569,7 @@ optimize-clear:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 87 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 91 �s�ڂ���):
 	docker-compose exec app php artisan optimize:clear
 	
 
@@ -563,7 +577,7 @@ npm-install:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 100 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 106 �s�ڂ���):
 	docker-compose exec web npm install
 	
 
@@ -571,7 +585,7 @@ fresh:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 72 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 76 �s�ڂ���):
 	docker-compose exec app php artisan migrate:fresh --seed
 	
 
@@ -596,7 +610,7 @@ yarn-hot:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 120 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 126 �s�ڂ���):
 	docker-compose exec web yarn hot
 	
 
@@ -604,7 +618,7 @@ yarn:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 110 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 116 �s�ڂ���):
 	docker-compose exec web yarn
 	
 
@@ -620,7 +634,7 @@ yarn-watch:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 116 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 122 �s�ڂ���):
 	docker-compose exec web yarn watch
 	
 
@@ -658,7 +672,7 @@ yarn-watch-poll:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 118 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 124 �s�ڂ���):
 	docker-compose exec web yarn watch-poll
 	
 
@@ -674,7 +688,7 @@ tinker:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 81 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 85 �s�ڂ���):
 	docker-compose exec app php artisan tinker
 	
 
@@ -682,8 +696,16 @@ yarn-dev:
 #  �Öك��[���̒T���͍s���܂���ł���.
 #  �C���������`�F�b�N����邱�Ƃ͂���܂���.
 #  �t�@�C���͍X�V����Ă��܂���.
-#  ���s����R�}���h (`makefile', 114 �s�ڂ���):
+#  ���s����R�}���h (`makefile', 120 �s�ڂ���):
 	docker-compose exec web yarn dev
+	
+
+make-controller:
+#  �Öك��[���̒T���͍s���܂���ł���.
+#  �C���������`�F�b�N����邱�Ƃ͂���܂���.
+#  �t�@�C���͍X�V����Ă��܂���.
+#  ���s����R�}���h (`makefile', 72 �s�ڂ���):
+	docker-compose exec app php artisan make:controller ${NAME}
 	
 
 down:
@@ -703,7 +725,7 @@ ps:
 	
 
 # �t�@�C���n�b�V���e�[�u���̏��:
-# Load=54/1024=5%, Rehash=0, Collisions=0/65=0%
+# Load=57/1024=6%, Rehash=0, Collisions=0/68=0%
 # VPATH �T���p�X
 
 # `vpath' �T���p�X�͂���܂���
@@ -715,7 +737,7 @@ ps:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Make �f�[�^�x�[�X�I�� Thu May 20 11:43:46 2021
+# Make �f�[�^�x�[�X�I�� Wed May 26 20:33:26 2021
 
  
 make.exe: *** �^�[�Q�b�g `all' �� make ���郋�[��������܂���.  ���~.
