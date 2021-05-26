@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
+use App\Models\Attendance;
 
 class AttendanceController extends Controller
 {
@@ -18,6 +20,6 @@ class AttendanceController extends Controller
     }
 
     public function temp(Request $request){
-        return 
+        return date()
     }
 }

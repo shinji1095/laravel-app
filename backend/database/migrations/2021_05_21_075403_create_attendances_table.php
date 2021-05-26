@@ -16,11 +16,18 @@ class CreateAttendancesTable extends Migration
         if(!Schema::hasTable('attendances')){
             Schema::create('attendances', function (Blueprint $table) {
                 $table->id();
-                $table->integer('room');
-                $table->time('timeAttend');
-                $table->time('timeLeave');
-                $table->string('riskLunch');
-                $table->string('riskDinner');
+                $table->integer('roomID');
+                $table->time('arrival');
+                $table->time('leave');
+                $table->string('riskForLunch');
+                $table->string('riskForDinner');
+                $table->integer("userID");
+
+                //外部キー制約
+                $table->foreign("userID")
+                        ->reference("id")
+                        ->on("users")
+                        ->onDelete("cascade");
             });
         }
     }

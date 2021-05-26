@@ -16,9 +16,10 @@ class CreateUsersTable extends Migration
         if(!Schema::hasTable('users')){
             Schema::create('users', function (Blueprint $table) {
                 $table->id();
-                $table->string('UserName');
-                $table->string('UserGrade');
-                $table->integer('StudentID');
+                $table->string("hashID");
+                $table->string('name');
+                $table->string('academic');
+                $table->integer('studentID');
             });
         }
     }
